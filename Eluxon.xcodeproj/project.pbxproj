@@ -12,6 +12,8 @@
 		EE8623961F61B251007E3694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8623941F61B251007E3694 /* Main.storyboard */; };
 		EE8623981F61B251007E3694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8623971F61B251007E3694 /* Assets.xcassets */; };
 		EE86239B1F61B251007E3694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8623991F61B251007E3694 /* LaunchScreen.storyboard */; };
+		EE8623A51F61B56B007E3694 /* SwitchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8623A41F61B56B007E3694 /* SwitchStatus.swift */; };
+		EE8623A71F61B59C007E3694 /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8623A61F61B59C007E3694 /* Togglable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EE8623971F61B251007E3694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE86239A1F61B251007E3694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE86239C1F61B251007E3694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8623A41F61B56B007E3694 /* SwitchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStatus.swift; sourceTree = "<group>"; };
+		EE8623A61F61B59C007E3694 /* Togglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Togglable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		EE86238F1F61B251007E3694 /* Eluxon */ = {
 			isa = PBXGroup;
 			children = (
+				EE8623A31F61B54E007E3694 /* Protocols */,
+				EE8623A21F61B545007E3694 /* Enums */,
 				EE8623901F61B251007E3694 /* AppDelegate.swift */,
 				EE8623921F61B251007E3694 /* ViewController.swift */,
 				EE8623941F61B251007E3694 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				EE86239C1F61B251007E3694 /* Info.plist */,
 			);
 			path = Eluxon;
+			sourceTree = "<group>";
+		};
+		EE8623A21F61B545007E3694 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EE8623A41F61B56B007E3694 /* SwitchStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EE8623A31F61B54E007E3694 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE8623A61F61B59C007E3694 /* Togglable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			files = (
 				EE8623931F61B251007E3694 /* ViewController.swift in Sources */,
 				EE8623911F61B251007E3694 /* AppDelegate.swift in Sources */,
+				EE8623A51F61B56B007E3694 /* SwitchStatus.swift in Sources */,
+				EE8623A71F61B59C007E3694 /* Togglable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
